@@ -140,7 +140,7 @@ def main():
                        help="space between watermarks, default is 75")
     parse.add_argument("-a", "--angle", default=30, type=int,
                        help="rotate angle of watermarks, default is 30")
-    parse.add_argument("--font-family", default="./font/字体圈欣意冠黑体.ttf", type=str,
+    parse.add_argument("--font-family", default="./font/方正黑体简体.ttf", type=str,
                        help=textwrap.dedent('''\
                        font family of text, default is './font/字体圈欣意冠黑体.ttf'
                        using font in system just by font file name

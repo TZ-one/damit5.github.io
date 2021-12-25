@@ -1,0 +1,920 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04.RMI基础 · d4m1ts's知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="d4m1ts">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05.JNDI注入.html" />
+    
+    
+    <link rel="prev" href="03.Java序列化与反序列化.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    02.代码审计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    01.Java安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    1.审计基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="01.JVM类加载机制.html">
+            
+                <a href="01.JVM类加载机制.html">
+            
+                    
+                    01.JVM类加载机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="02.Java反射机制.html">
+            
+                <a href="02.Java反射机制.html">
+            
+                    
+                    02.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="03.Java序列化与反序列化.html">
+            
+                <a href="03.Java序列化与反序列化.html">
+            
+                    
+                    03.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.1.4" data-path="04.RMI基础.html">
+            
+                <a href="04.RMI基础.html">
+            
+                    
+                    04.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.5" data-path="05.JNDI注入.html">
+            
+                <a href="05.JNDI注入.html">
+            
+                    
+                    05.JNDI注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.6" data-path="06.IDEA断点调试.html">
+            
+                <a href="06.IDEA断点调试.html">
+            
+                    
+                    06.IDEA断点调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.7" data-path="07.Java加载字节码.html">
+            
+                <a href="07.Java加载字节码.html">
+            
+                    
+                    07.Java加载字节码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.8" data-path="08.javassist字节码编程.html">
+            
+                <a href="08.javassist字节码编程.html">
+            
+                    
+                    08.javassist字节码编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.9" data-path="09.EL表达式.html">
+            
+                <a href="09.EL表达式.html">
+            
+                    
+                    09.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.10" data-path="10.SpEL表达式.html">
+            
+                <a href="10.SpEL表达式.html">
+            
+                    
+                    10.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.11" data-path="11.OGNL表达式.html">
+            
+                <a href="11.OGNL表达式.html">
+            
+                    
+                    11.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.12" data-path="12.IDEA调试JAR.html">
+            
+                <a href="12.IDEA调试JAR.html">
+            
+                    
+                    12.IDEA调试JAR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" >
+            
+                <span>
+            
+                    
+                    2.各种分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../2.各种分析/01.Apache_Commons_Collections中的反序列化.html">
+            
+                <a href="../2.各种分析/01.Apache_Commons_Collections中的反序列化.html">
+            
+                    
+                    01.Apache_Commons_Collections中的反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="../2.各种分析/02.URLDNS链分析.html">
+            
+                <a href="../2.各种分析/02.URLDNS链分析.html">
+            
+                    
+                    02.URLDNS链分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.3" data-path="../2.各种分析/03.log4j反序列化漏洞分析.html">
+            
+                <a href="../2.各种分析/03.log4j反序列化漏洞分析.html">
+            
+                    
+                    03.log4j反序列化漏洞分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.4" data-path="../2.各种分析/04.Fastjson 1.2.24反序列化漏洞分析.html">
+            
+                <a href="../2.各种分析/04.Fastjson 1.2.24反序列化漏洞分析.html">
+            
+                    
+                    04.Fastjson 1.2.24反序列化漏洞分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.5" data-path="../2.各种分析/05.Fastjson的dnslog探测方式分析.html">
+            
+                <a href="../2.各种分析/05.Fastjson的dnslog探测方式分析.html">
+            
+                    
+                    05.Fastjson的dnslog探测方式分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.6" data-path="../2.各种分析/06.Fastjson各版本漏洞分析.html">
+            
+                <a href="../2.各种分析/06.Fastjson各版本漏洞分析.html">
+            
+                    
+                    06.Fastjson各版本漏洞分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.7" data-path="../2.各种分析/07.Fastjson1.2.68分析.html">
+            
+                <a href="../2.各种分析/07.Fastjson1.2.68分析.html">
+            
+                    
+                    07.Fastjson1.2.68分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.8" data-path="../2.各种分析/08.ysoserial-C3P0分析.html">
+            
+                <a href="../2.各种分析/08.ysoserial-C3P0分析.html">
+            
+                    
+                    08.ysoserial-C3P0分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.9" data-path="../2.各种分析/09.log4j2_rce分析.html">
+            
+                <a href="../2.各种分析/09.log4j2_rce分析.html">
+            
+                    
+                    09.log4j2_rce分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" >
+            
+                <span>
+            
+                    
+                    3.内存马
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../3.内存马/01.Tomcat内存马.html">
+            
+                <a href="../3.内存马/01.Tomcat内存马.html">
+            
+                    
+                    01.Tomcat内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../3.内存马/02.Spring内存马.html">
+            
+                <a href="../3.内存马/02.Spring内存马.html">
+            
+                    
+                    02.Spring内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.3" data-path="../3.内存马/03.Java Agent 内存马.html">
+            
+                <a href="../3.内存马/03.Java Agent 内存马.html">
+            
+                    
+                    03.Java Agent 内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../更新日志.html">
+            
+                <a href="../../../../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../../友情链接.html">
+            
+                <a href="../../../../友情链接.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >04.RMI基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#rmi&#x6982;&#x8FF0;"><b>1.1. </b>RMI&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#rmi&#x5B9E;&#x73B0;&#x673A;&#x5236;"><b>1.2. </b>RMI&#x5B9E;&#x73B0;&#x673A;&#x5236;</a></li><li><span class="title-icon "></span><a href="#rmi&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><b>1.3. </b>RMI&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><b>1.3.1. </b>&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><b>1.3.2. </b>&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b>1.3.3. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><b>1.4. </b>&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; d4m1ts all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#rmi&#x6982;&#x8FF0;">RMI&#x6982;&#x8FF0;</a><i></i></div></li>
+<li><div><a href="#rmi&#x5B9E;&#x73B0;&#x673A;&#x5236;">RMI&#x5B9E;&#x73B0;&#x673A;&#x5236;</a><i></i></div></li>
+<li><div><a href="#rmi&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;">RMI&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;">&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</a><i></i></div></li>
+<li><div><a href="#&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;">&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#hellointerfacejava">HelloInterface.java</a><i></i></div></li>
+<li><div><a href="#helloimpljava">HelloImpl.java</a><i></i></div></li>
+<li><div><a href="#serverjava">Server.java</a><i></i></div></li>
+<li><div><a href="#clientjava">Client.java</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a><i></i></div></li>
+</ul>
+</div>
+
+<h2 id="rmi&#x6982;&#x8FF0;"><a name="rmi&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#rmi&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. RMI&#x6982;&#x8FF0;</h2>
+<p><strong>RMI: &#x8FDC;&#x7A0B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;(Remote Method Invocation)</strong>&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x5B58;&#x50A8;&#x4E8E;&#x4E0D;&#x540C;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x7684;&#x7A0B;&#x5E8F;&#x7EA7;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x5F7C;&#x6B64;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x65E0;&#x7F1D;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x3002;</p>
+<p><strong>Java RMI</strong>&#xFF1A;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x865A;&#x62DF;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x8FD9;&#x4E9B;&#x865A;&#x62DF;&#x673A;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x3001;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x4E3B;&#x673A;&#x4E0A;&#xFF1B;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x4E00;&#x4E2A;JVM&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;JVM&#x7684;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#xFF09;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x662F;&#x5141;&#x8BB8;&#x88AB;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x6807;&#x5FD7;&#x52A0;&#x4EE5;&#x6807;&#x8BC6;&#x3002;</p>
+<p>&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x7684;&#x4E00;&#x65B9;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x4E00;&#x65B9;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<hr>
+<p>&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x672C;&#x5730;&#x4F1A;&#x901A;&#x8FC7;<strong>&#x67D0;&#x79CD;&#x65B9;&#x5F0F;</strong>&#x83B7;&#x5F97;&#x8FDC;&#x7A0B;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x4EE3;&#x7406;&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x662F;&#x901A;&#x8FC7;&#x5E8F;&#x5217;&#x5316;&#x4E0E;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF1A;</p>
+<ol>
+<li>&#x53EA;&#x8981;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x7684;&#x662F;&#x4E00;&#x4E2A;Object&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#xFF0C;</li>
+<li>&#x4E14;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;classpath&#x4E2D;&#x5B58;&#x5728;&#x53EF;&#x5229;&#x7528;pop&#x94FE;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x7CBE;&#x5FC3;&#x6784;&#x9020;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x653B;&#x51FB;rmi&#x670D;&#x52A1;&#x3002;</li>
+</ol>
+<h2 id="rmi&#x5B9E;&#x73B0;&#x673A;&#x5236;"><a name="rmi&#x5B9E;&#x73B0;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#rmi&#x5B9E;&#x73B0;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. RMI&#x5B9E;&#x73B0;&#x673A;&#x5236;</h2>
+<p><strong>&#x8981;&#x5B9E;&#x73B0;RMI&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</strong>Java&#x7684;RMI&#x89C4;&#x5B9A;&#x6B64;&#x63A5;&#x53E3;&#x5FC5;&#x987B;&#x6D3E;&#x751F;&#x81EA;<code>java.rmi.Remote</code>&#xFF0C;&#x5E76;&#x5728;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x58F0;&#x660E;&#x629B;&#x51FA;<code>RemoteException</code>&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x8BF4;&#x4E86;&#x672C;&#x5730;&#x4F1A;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x83B7;&#x5F97;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x90A3;&#x4E48;&#x5177;&#x4F53;&#x662F;&#x600E;&#x4E48;&#x7684;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#x5462;&#xFF1F;RMI&#x6A21;&#x5F0F;&#x4E2D;&#x9664;&#x4E86;&#x6709;Client&#x4E0E;Server&#xFF0C;&#x8FD8;&#x501F;&#x52A9;&#x4E86;&#x4E00;&#x4E2A;Registry(&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;)&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;RMI&#x7531;3&#x4E2A;&#x90E8;&#x5206;&#x6784;&#x6210;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x662F;rmiregistry&#xFF08;JDK&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5728;bin&#x76EE;&#x5F55;&#x4E0B;&#xFF09;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;server&#x7AEF;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x662F;client&#x7AEF;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x60F3;&#x8981;&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Server</th>
+<th style="text-align:center">Registry</th>
+<th style="text-align:center">Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x63D0;&#x4F9B;&#x5177;&#x4F53;&#x7684;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</td>
+<td style="text-align:center">&#x4E00;&#x4E2A;&#x6CE8;&#x518C;&#x8868;&#xFF0C;&#x5B58;&#x653E;&#x7740;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;ip&#x3001;&#x7AEF;&#x53E3;&#x3001;&#x6807;&#x8BC6;&#x7B26;&#xFF09;</td>
+<td style="text-align:center">&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x4F7F;&#x7528;&#x8005;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5176;&#x4E2D;Server&#x4E0E;Registry&#x53EF;&#x4EE5;&#x5728;&#x540C;&#x4E00;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B9E;&#x73B0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5E03;&#x7F6E;&#x5728;&#x4E0D;&#x540C;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x73B0;&#x5728;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;RMI&#x6D41;&#x7A0B;&#x53EF;&#x4EE5;&#x5927;&#x6982;&#x63CF;&#x8FF0;&#x4E3A;&#xFF1A;</p>
+<ol>
+<li>&#x542F;&#x52A8;<code>Registry</code>&#x670D;&#x52A1;&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x7AEF;&#x53E3;&#xFF08;1099&#xFF09;&#x3002;</li>
+<li><code>Server</code>&#x7AEF;&#x5728;&#x672C;&#x5730;&#x5148;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;RMI&#x63D0;&#x4F9B;&#x7684; <strong>Naming/Context/Registry</strong>&#xFF08;&#x4E0B;&#x9762;&#x5B9E;&#x4F8B;&#x7528;&#x7684;Registry&#xFF09;&#x7B49;&#x7C7B;&#x7684;<code>bind</code>&#x6216;<code>rebind</code>&#x65B9;&#x6CD5;&#x5C06;&#x521A;&#x624D;&#x5B9E;&#x4F8B;&#x5316;&#x597D;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;<strong>&#x6CE8;&#x518C;</strong>&#x5230;<code>RMI Registry</code>&#x4E0A;&#x5E76;&#x5BF9;&#x5916;&#x66B4;&#x9732;&#x4E00;&#x4E2A;&#x540D;&#x79F0;&#x3002;</li>
+<li><code>Client</code>&#x7AEF;&#x901A;&#x8FC7;&#x672C;&#x5730;&#x7684;&#x63A5;&#x53E3;&#x548C;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x7684;&#x540D;&#x79F0;&#xFF08;&#x5373;<code>RMI Registry</code>&#x66B4;&#x9732;&#x51FA;&#x7684;&#x540D;&#x79F0;&#xFF09;&#x518D;&#x4F7F;&#x7528;RMI&#x63D0;&#x4F9B;&#x7684;<strong><code>Naming/Context/Registry</code></strong>&#x7B49;&#x7C7B;&#x7684;<code>lookup</code>&#x65B9;&#x6CD5;&#x4ECE;<code>RMI Server</code>&#x90A3;&#x62FF;&#x5230;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;&#x8FD9;&#x6837;&#x867D;&#x7136;&#x672C;&#x5730;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x4F46;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x5728;&#x63A5;&#x53E3;&#x91CC;&#x4E86;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x4E86;&#x3002;</li>
+</ol>
+<p><strong>RMI&#x7684;&#x4EA4;&#x4E92;&#x56FE;</strong>&#xFF1A;
+<a href="RMI&#x57FA;&#x7840;.assets/20181023090617906.png" data-lightbox="f867e806-a1c6-4ca5-ac57-00d1f2737e74" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="RMI&#x57FA;&#x7840;.assets/20181023090617906.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<blockquote>
+<p>PS&#xFF1A; &#x56FE;&#x4E2D;&#x7684;stub&#x5C31;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;&#xFF0C;skeleton&#x5C31;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x4EE3;&#x7406;</p>
+</blockquote>
+<p>&#x8FDC;&#x7A0B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x7684;&#x901A;&#x4FE1;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<p><a href="RMI&#x57FA;&#x7840;.assets/image-20210808161028381.png" data-lightbox="348e276a-3df9-4ad8-8f54-fcfa7ddef76f" data-title="image-20210808161028381"><img src="RMI&#x57FA;&#x7840;.assets/image-20210808161028381.png" alt="image-20210808161028381"></a></p>
+<h2 id="rmi&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><a name="rmi&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#rmi&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. RMI&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</h2>
+<h3 id="&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><a name="&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</h3>
+<p>&#x5927;&#x6982;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x6CE8;&#x518C;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8C03;&#x7528;&#x63A5;&#x53E3;</li>
+</ul>
+<h3 id="&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><a name="&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x5B9E;&#x73B0;&#x4E3E;&#x4F8B;</h3>
+<h4 id="hellointerfacejava"><a name="hellointerfacejava" class="anchor-navigation-ex-anchor" href="#hellointerfacejava"><i class="fa fa-link" aria-hidden="true"></i></a><a name="hellointerfacejava" class="anchor-navigation-ex-anchor" href="#hellointerfacejava"><i class="fa fa-link" aria-hidden="true"></i></a>HelloInterface.java</h4>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;</span>
+<span class="hljs-keyword">package</span> com.company;
+
+<span class="hljs-keyword">import</span> java.rmi.Remote;
+<span class="hljs-keyword">import</span> java.rmi.RemoteException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">HelloInterface</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Remote</span> </span>{    <span class="hljs-comment">// &#x521B;&#x5EFA;&#x63A5;&#x53E3;&#xFF0C;&#x5FC5;&#x987B;&#x7EE7;&#x627F;Remote</span>
+    <span class="hljs-function">String <span class="hljs-title">say</span> <span class="hljs-params">(String name)</span> <span class="hljs-keyword">throws</span> RemoteException</span>;    <span class="hljs-comment">// &#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x8981;&#x629B;&#x51FA; RemoteException &#x5F02;&#x5E38;</span>
+}
+</code></pre>
+<h4 id="helloimpljava"><a name="helloimpljava" class="anchor-navigation-ex-anchor" href="#helloimpljava"><i class="fa fa-link" aria-hidden="true"></i></a><a name="helloimpljava" class="anchor-navigation-ex-anchor" href="#helloimpljava"><i class="fa fa-link" aria-hidden="true"></i></a>HelloImpl.java</h4>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;</span>
+<span class="hljs-keyword">package</span> com.company;
+
+<span class="hljs-keyword">import</span> java.rmi.RemoteException;
+<span class="hljs-keyword">import</span> java.rmi.server.UnicastRemoteObject;    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x8981;&#x8FD9;&#x4E2A;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x62A5;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x9519;</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloImpl</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">UnicastRemoteObject</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">HelloInterface</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">HelloImpl</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> RemoteException </span>{    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x8981;&#x8FD9;&#x4E2A;</span>
+        <span class="hljs-keyword">super</span>();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">say</span><span class="hljs-params">(String name)</span> <span class="hljs-keyword">throws</span> RemoteException </span>{    <span class="hljs-comment">// &#x5B9E;&#x73B0;&#x521A;&#x624D;&#x5B9A;&#x4E49;&#x7684;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;test &quot;</span> + name;
+    }
+}
+</code></pre>
+<h4 id="serverjava"><a name="serverjava" class="anchor-navigation-ex-anchor" href="#serverjava"><i class="fa fa-link" aria-hidden="true"></i></a><a name="serverjava" class="anchor-navigation-ex-anchor" href="#serverjava"><i class="fa fa-link" aria-hidden="true"></i></a>Server.java</h4>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6CE8;&#x518C;&#x8868;&#xFF0C;&#x5E76;&#x6CE8;&#x518C;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">package</span> com.company;
+
+<span class="hljs-keyword">import</span> java.net.MalformedURLException;
+<span class="hljs-keyword">import</span> java.rmi.AlreadyBoundException;
+<span class="hljs-keyword">import</span> java.rmi.Naming;
+<span class="hljs-keyword">import</span> java.rmi.RemoteException;
+<span class="hljs-keyword">import</span> java.rmi.registry.LocateRegistry;
+<span class="hljs-keyword">import</span> java.rmi.registry.Registry;
+
+<span class="hljs-comment">//&#x6CE8;&#x518C;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Server</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> RemoteException, AlreadyBoundException, MalformedURLException </span>{
+        HelloInterface helloService = <span class="hljs-keyword">new</span> HelloImpl();
+        LocateRegistry.createRegistry(<span class="hljs-number">1099</span>);    <span class="hljs-comment">// &#x521B;&#x5EFA;</span>
+        System.setProperty(<span class="hljs-string">&quot;java.rmi.server.hostname&quot;</span>,<span class="hljs-string">&quot;127.0.0.1&quot;</span>); <span class="hljs-comment">// &#x7ED1;&#x5B9A;IP&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; 127.0.0.1</span>
+        Registry registry = LocateRegistry.getRegistry();    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5B9E;&#x4F8B;</span>
+        registry.bind(<span class="hljs-string">&quot;test&quot;</span>,helloService);    <span class="hljs-comment">// &#x6CE8;&#x518C;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</span>
+        <span class="hljs-comment">//Naming.bind(&quot;test&quot;,helloService); // &#x4E0A;&#x9762;2&#x884C;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x66FF;&#x6362;</span>
+
+    }
+}
+</code></pre>
+<h4 id="clientjava"><a name="clientjava" class="anchor-navigation-ex-anchor" href="#clientjava"><i class="fa fa-link" aria-hidden="true"></i></a><a name="clientjava" class="anchor-navigation-ex-anchor" href="#clientjava"><i class="fa fa-link" aria-hidden="true"></i></a>Client.java</h4>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x67E5;&#x627E;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x65B9;&#x6CD5;</span>
+<span class="hljs-keyword">package</span> com.company;
+
+<span class="hljs-keyword">import</span> java.net.MalformedURLException;
+<span class="hljs-keyword">import</span> java.rmi.Naming;
+<span class="hljs-keyword">import</span> java.rmi.NotBoundException;
+<span class="hljs-keyword">import</span> java.rmi.RemoteException;
+<span class="hljs-keyword">import</span> java.rmi.registry.LocateRegistry;
+<span class="hljs-keyword">import</span> java.rmi.registry.Registry;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Client</span> 
+</span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">( String[] args )</span> <span class="hljs-keyword">throws</span> RemoteException, NotBoundException, MalformedURLException </span>{
+        <span class="hljs-comment">// HelloInterface hello = (HelloInterface) Naming.lookup(&quot;rmi://127.0.0.1:1099/test&quot;);    // &#x5199;&#x6CD5;&#x90FD;&#x53EF;</span>
+
+        Registry registry = LocateRegistry.getRegistry(<span class="hljs-string">&quot;127.0.0.1&quot;</span>, <span class="hljs-number">1099</span>);
+        HelloInterface hello = (HelloInterface) registry.lookup(<span class="hljs-string">&quot;test&quot;</span>);
+
+        System.out.println(hello.says(<span class="hljs-string">&quot;123123&quot;</span>));
+    }
+}
+</code></pre>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<ol>
+<li>&#x63A5;&#x53E3;&#x9700;&#x8981;&#x7EE7;&#x627F;<code>Remote&#x63A5;&#x53E3;</code>&#xFF0C;&#x4E14;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x629B;&#x51FA;<code>RemoteException</code>&#x9519;&#x8BEF;</li>
+<li>&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x9700;&#x8981;&#x7EE7;&#x627F;<code>UnicastRemoteObject</code>&#xFF0C;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x629B;&#x51FA;<code>RemoteException</code>&#x9519;&#x8BEF;</li>
+<li>&#x5982;&#x679C;&#x8FDC;&#x7A0B;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x4F20;&#x53C2;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x5E8F;&#x5217;&#x5316;&#x7684;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x4F20;&#x53C2;&#x53EA;&#x662F;&#x4F20;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x53EF;&#x5E8F;&#x5217;&#x5316;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x53C2;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x5B9E;&#x73B0;<code>Serilizable</code>&#x63A5;&#x53E3;</li>
+<li>&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x5728;&#x540C;&#x4E00;&#x4E3B;&#x673A;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x8C03;&#x7528;&#x7684;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x7684;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x90FD;&#x5B58;&#x5728;</li>
+</ol>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;"><a name="&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<blockquote>
+<p><a href="https://www.jianshu.com/p/5c6f2b6d458a" target="_blank">https://www.jianshu.com/p/5c6f2b6d458a</a></p>
+<p><a href="https://blog.csdn.net/qq_28081453/article/details/83279066" target="_blank">https://blog.csdn.net/qq_28081453/article/details/83279066</a></p>
+<p><a href="https://www.cnblogs.com/fanghao/p/8918953.html" target="_blank">https://www.cnblogs.com/fanghao/p/8918953.html</a></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1323711850348577" target="_blank">https://www.liaoxuefeng.com/wiki/1252599548343744/1323711850348577</a></p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-12-25 18:17:54
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03.Java序列化与反序列化.html" class="navigation navigation-prev " aria-label="Previous page: 03.Java序列化与反序列化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05.JNDI注入.html" class="navigation navigation-next " aria-label="Next page: 05.JNDI注入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04.RMI基础","level":"1.2.1.1.4","depth":4,"next":{"title":"05.JNDI注入","level":"1.2.1.1.5","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/05.JNDI注入.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/05.JNDI注入.md","articles":[]},"previous":{"title":"03.Java序列化与反序列化","level":"1.2.1.1.3","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/03.Java序列化与反序列化.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/03.Java序列化与反序列化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","back-to-top-button","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"livereload":{},"splitter":{},"code":{"copyButtons":true},"donate":{"alipay":"https://static01.imgkr.com/temp/7d293344052647ec8400657bb66cffc7.jpg","alipayText":"支付宝打赏","button":"支持","title":"Buy Me a Coffee\n","wechat":"https://static01.imgkr.com/temp/2316e058462948098c87dadf1f2b5d34.jpg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts's知识库","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/04.RMI基础.md","mtime":"2021-12-25T10:17:54.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-25T10:50:10.533Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
