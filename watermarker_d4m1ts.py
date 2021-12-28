@@ -188,7 +188,7 @@ def main():
         pool = ThreadPoolExecutor(max_workers=args.thread)
 
         for name in tqdm(names, desc="运行中", ncols=50):
-            if ".//README.assets/" not in name: # 防止更新图标等文件
+            if "个人知识库" in name: # 防止更新图标等文件
                 image_file = name
                 pool.submit(add_mark, image_file, mark, args)
             else:
