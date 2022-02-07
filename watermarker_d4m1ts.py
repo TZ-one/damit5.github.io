@@ -6,6 +6,7 @@ import os
 import sys
 import math
 import textwrap
+import time
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image, ImageFont, ImageDraw, ImageEnhance, ImageChops
@@ -200,3 +201,4 @@ def main():
 if __name__ == '__main__':
     print("1.修改过后的脚本，直接覆盖源文件！！！输出地址参数无效，其他参数正常使用\n2.顺便优化了遍历目录的方式\n3.动态修改图片水印的间隔space，max(长/20, 100)")
     main()
+    time.sleep(10)  # 防止最后有些没处理完，再等10秒
