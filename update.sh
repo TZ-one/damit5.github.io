@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+git rm handle.sh
+git rm test.zip
+
 if [ -n "$1" ]
 then
     # 上传到github
