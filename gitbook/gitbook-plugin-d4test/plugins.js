@@ -10,7 +10,7 @@ require(["gitbook"], function(gitbook) {
             throw "Need to option 'token' for Google ads plugin";
         }
         // 获取<head>标签
-        const head = document.getElementsByTagName('head')[0];
+        let head = document.getElementsByTagName('head')[0];
         // 创建<script>元素
         let script = document.createElement('script');
         script.async = true;
