@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# 更新 sitemap
+python3 gen_sitemap.py
+
 if [ -n "$1" ]
 then
     # 上传到github
