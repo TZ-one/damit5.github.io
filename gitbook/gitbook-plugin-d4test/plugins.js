@@ -2,18 +2,18 @@ require(["gitbook"], function(gitbook) {
 
     // start事件
     gitbook.events.bind("start", function(e, pluginConfig) {
-        // 域名 锚定 广告
-        // 获取<head>标签
-        let head = document.getElementsByTagName('head')[0];
-        // 创建<script>元素
-        let script = document.createElement('script');
-        script.async = true;
-        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9261110029983076";
-        script.crossOrigin = "anonymous";
+        // // 域名 锚定 广告
+        // // 获取<head>标签
+        // let head = document.getElementsByTagName('head')[0];
+        // // 创建<script>元素
+        // let script = document.createElement('script');
+        // script.async = true;
+        // script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9261110029983076";
+        // script.crossOrigin = "anonymous";
 
-        // 将<script>元素添加到<head>标签中
-        head.appendChild(script);
-        console.log("google ads test");
+        // // 将<script>元素添加到<head>标签中
+        // head.appendChild(script);
+        // console.log("google ads test");
     });
 
     // page.change事件
@@ -66,25 +66,19 @@ require(["gitbook"], function(gitbook) {
         // 检查是否存在广告禁用
         let ad_check_ins = document.getElementsByTagName("ins");
         setTimeout(function() {
-          let count = 0; // 用来计数加了几个广告的横线
           for (let i = 0; i < ad_check_ins.length; i++) {
             let ad_check_div = ad_check_ins[i].getElementsByTagName("div");
             if (ad_check_div.length > 0) {
               console.log("yes ad");
-              let prev_element = ad_check_ins[i].previousElementSibling;
-              let next_element = ad_check_ins[i].nextElementSibling;
-              if (count < 4) { // 只给前2个广告加横线（4条横线）
-                if (!prev_element || prev_element.tagName !== 'HR') {
-                  let hr_before = document.createElement("hr");
-                  ad_check_ins[i].parentNode.insertBefore(hr_before, ad_check_ins[i]);
-                  count++;
-                }
-                if (!next_element || next_element.tagName !== 'HR') {
-                  let hr_after = document.createElement("hr");
-                  ad_check_ins[i].parentNode.insertBefore(hr_after, ad_check_ins[i].nextSibling);
-                  count++;
-                }
+              // 加入一根粗横线
+              let treeviewContainer = document.querySelector('.treeview__container');
+              if (treeviewContainer) {
+                let horizontalLine = document.createElement('hr');
+                horizontalLine.style.borderTop = "2px solid black";
+                treeviewContainer.insertAdjacentElement('beforebegin', horizontalLine);
               }
+              break;
+
             } else {
               let ad_image = document.createElement("img");
               ad_image.src = "https://img.shields.io/badge/%E5%A6%82%E6%9E%9C%E5%8F%AF%E4%BB%A5-%E8%AF%B7%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BD%91%E7%AB%99%E7%A6%81%E7%94%A8AdBlock-red?style=for-the-badge&logo=adblockplus&logoColor=C70D2C&labelColor=silver";
@@ -95,7 +89,7 @@ require(["gitbook"], function(gitbook) {
               break;
             }
           }
-        }, 1000);
+        }, 3000);
 
     });
 
